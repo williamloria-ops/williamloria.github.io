@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭储蓄与购物清单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f7f9fc;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 12px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .label {
+            color: #7f8c8d;
+        }
+        .value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .value.green {
+            color: #27ae60;
+        }
+        .value.red {
+            color: #e74c3c;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .done::before {
+            content: "✅";
+            color: #27ae60;
+        }
+        .footer {
+            text-align: center;
+            color: #95a5a6;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏠 家庭储蓄 & 购物记录</h1>
+
+    <!-- 储蓄概况 -->
+    <div class="card">
+        <h2>💰 储蓄概况</h2>
+        <div class="info-row">
+            <span class="label">家庭总储蓄</span>
+            <span class="value green">¥ 58600.00</span>
+        </div>
+        <div class="info-row">
+            <span class="label">本月预算</span>
+            <span class="value">¥ 3000.00</span>
+        </div>
+        <div class="info-row">
+            <span class="label">本月已支出</span>
+            <span class="value red">¥ 1742.50</span>
+        </div>
+        <div class="info-row">
+            <span class="label">本月剩余可支配</span>
+            <span class="value green">¥ 1257.50</span>
+        </div>
+    </div>
+
+    <!-- 待购买清单 -->
+    <div class="card">
+        <h2>🛒 待购买清单</h2>
+        <ul>
+            <li>洗衣液 2 瓶</li>
+            <li>抽纸 3 提</li>
+            <li>家用小工具套装</li>
+            <li>孩子绘本一套</li>
+            <li>空气净化器滤芯</li>
+        </ul>
+    </div>
+
+    <!-- 已购买记录 -->
+    <div class="card">
+        <h2>✅ 近期已购买</h2>
+        <ul>
+            <li class="done">大米 10kg</li>
+            <li class="done">牛奶 2 箱</li>
+            <li class="done">厨房清洁剂</li>
+            <li class="done">垃圾袋 5 卷</li>
+        </ul>
+    </div>
+
+    <!-- 心愿清单 -->
+    <div class="card">
+        <h2>✨ 家庭心愿清单</h2>
+        <ul>
+            <li>周末短途旅行</li>
+            <li>更换新路由器</li>
+            <li>家庭照片打印成册</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        个人主页 · 家庭储蓄记录 · 无需服务器
+    </div>
+
+</body>
+</html>
